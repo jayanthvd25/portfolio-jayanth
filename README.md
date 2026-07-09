@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🚀 Live Demo
 
-🔗 Coming Soon (GitHub Pages)
+https://jayanthvd25.github.io/portfolio-jayanth/
 
 ## 📖 About
 
