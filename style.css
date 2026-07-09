@@ -353,32 +353,178 @@ nav a:hover{
 
 }
 
-@media screen and (max-width:1200px) {
+/* ===================== TABLET ===================== */
+
+@media screen and (max-width: 1200px) {
+
     .main-container{
         grid-template-columns: 1fr;
+        gap: 30px;
         padding: 20px;
     }
 
     .left-bar{
         position: static;
         height: auto;
+        width: 100%;
     }
+
+    .right-bar{
+        width: 100%;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
 }
 
-@media screen and (max-width:750px) {
-    .project-container{
-        grid-template-columns: 1fr;
-    }
 
-    #navigation nav {
-        /* Adjust nav for smaller screens */
-        justify-content: center;
-        flex-wrap: wrap;
+/* ===================== MOBILE ===================== */
+
+@media screen and (max-width: 768px) {
+
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
     }
 
     .left-bar{
         display: flex;
-        justify-content: center;
-        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        text-align: center;
     }
+
+    .right-bar{
+        padding: 20px;
+    }
+
+    /* Profile */
+
+    .profile img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .profile h2{
+        font-size: 1.8rem;
+    }
+
+    .profile p{
+        font-size: 0.85rem;
+    }
+
+    /* Contact */
+
+    .content{
+        width: 100%;
+    }
+
+    .v1{
+        word-break: break-word;
+    }
+
+    /* Navigation */
+
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* Section Heading */
+
+    .heading{
+        font-size: 1.7rem;
+    }
+
+    /* Skills */
+
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+
+    .item{
+        padding: 15px;
+    }
+
+    .item img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .item h3{
+        font-size: 0.9rem;
+    }
+
+    /* Education */
+
+    .degree{
+        font-size: 1rem;
+    }
+
+    /* Portfolio */
+
+    .project-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project1 img{
+        height: 180px;
+    }
+
+    .card{
+        padding: 18px;
+    }
+
+    .card h3{
+        font-size: 1.2rem;
+    }
+
+    .card span{
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+/* ===================== SMALL PHONES ===================== */
+
+@media screen and (max-width: 480px){
+
+    .profile img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .heading{
+        font-size: 1.5rem;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .item{
+        padding: 18px;
+    }
+
+    nav{
+        gap: 8px;
+    }
+
+    nav a{
+        font-size: 0.9rem;
+    }
+
+    .card h3{
+        font-size: 1.1rem;
+    }
+
 }
