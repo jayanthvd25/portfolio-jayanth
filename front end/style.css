@@ -1,0 +1,384 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body{
+    background-color : #1e1e1e;
+    font-family : sans-serif;
+    color : #a0a0a0;
+    line-height : 1.6;
+}
+
+.main-container{
+    display : grid;
+    max-width: 1200px;
+    grid-template-columns :  400px 1fr;
+    gap: 50px;
+    padding-top: 50px;
+    margin :auto;
+}
+
+.left-bar{
+    height:85vh;
+    background-color: #2e2e2e;
+    border-style: solid;
+    border-width : 1px;
+    border-color: #3a3a3a;
+    border-radius: 20px;
+    padding : 50px;
+    position : sticky;
+    top : 40px;
+}
+
+.right-bar{
+    
+    background-color: #2e2e2e;
+    border: solid 1px #3a3a3a;
+    border-radius : 20px;
+    padding : 40px;
+}
+
+/*profile section*/
+
+.profile{
+    text-align: center;
+}
+
+.profile img{
+    width: 230px;
+    height : 230px;
+    border-radius: 50%;
+    border : solid 1px #3a3a3a;
+}
+
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color : rgb(227, 222, 222);
+    margin-top: 5px;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    padding : 5px 15px;
+    color :rgb(235, 172, 172);
+    border : solide 1px #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*contact section*/
+
+.content{
+    margin-top: 30px;
+    border-top: 2px solid #737070;
+    padding-top : 20px;
+}
+
+.l1{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.v1{
+    color: #e0e0e0;
+    text-decoration: none;
+
+}
+
+.email{
+    margin-bottom: 15px;
+}
+
+.phone{
+    margin-bottom: 15px;
+}
+
+/*linkedIn section*/
+
+.linkedin{
+    margin-top: 30px;
+    border-top: 2px solid #737070;
+    padding-top : 20px;
+    text-align: center;
+}
+
+.linkedin img{
+    width : 25px;
+    height : 25px;
+    margin-right: 5px;
+    filter: grayscale(1) invert(5);
+    transition: filter 0.2s ease;
+}
+
+.linkedin img:hover{
+    filter: grayscale(0) invert(0);
+}
+
+
+/*right bar section*/
+
+
+/*navigation section*/
+
+#navigation{
+    border-bottom: 2px solid #737070;
+    padding-bottom: 20px;
+    margin-bottom : 20px;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap : 20px;
+}
+
+nav a{
+    text-decoration: none;;
+    color : #a0a0a0;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.anc{
+    color :rgb(235, 172, 172);
+}
+
+nav a:hover{
+    color :rgb(235, 172, 172);
+}
+
+/*about section*/
+
+#about{
+    margin-bottom : 30px;
+}
+
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width : 60px;
+    height : 5px;
+    background-color: #FFBF00;
+    margin-bottom: 20px;
+}
+
+.con{
+    text-align: justify;
+    color: #e0e0e0;
+}
+
+/*skills section*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.item{
+    padding : 20px;
+    border: 2px solid #3a3a3a;
+    border-radius: 14px;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item img{
+    height: 48px;
+    width: 48px;
+    filter : invert(70%) sepia(20%) saturate(400%) hue-rotate(350deg) brightness(110%) contrast(50%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*education section*/
+
+#education{
+    margin-top: 30px;
+}
+
+.year{
+    font-size: 0.8rem;
+    color : #a0a0a0;
+    margin-bottom : 5px;
+}
+
+.degree{
+    color : #e0e0e0;
+    font-size : 1.2rem;
+    font-weight: 500;
+}
+
+.work{
+    color:#a0a0a0;
+}
+
+.edfirst{
+    margin-bottom : 25px;
+    position: relative;
+    padding-left : 25px;
+}
+
+.college{
+    font-style : italic;
+    color : #a0a0a0;
+    margin-bottom : 8px;
+}
+
+.edsecond{
+    margin-bottom : 25px;
+    padding-left : 25px;
+    position : relative;
+}
+
+.edthird{
+    margin-bottom : 25px;
+    padding-left : 25px;
+    position : relative;
+}
+
+.projects{
+    margin-top: 5px;
+    font-style: italic;
+    color : #90baad;
+}
+
+.percentage{
+    margin-top: 5px;
+    font-style: italic;
+    color : #90baad;
+}
+
+.goal{
+    width : 15px;
+    height : 15px;
+    border : 3px solid rgb(235, 172, 172);
+    border-radius: 50%;
+    top : 2px;
+    left : 0px;
+    position : absolute;
+    z-index: 5;
+}
+
+.edtech{
+    position : relative;
+    margin-top : 20px;
+}
+
+.liner{
+    position : absolute;
+    top: 0px;
+    bottom : 0px;
+    border : 2px solid #1e1e1e;
+    left : 5px;
+}
+
+/*portfolio section*/
+
+.project-container{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 25px;
+    margin-top : 30px;
+}
+
+.project1 img{
+    height : 200px;
+    width : 100%;
+    object-fit: cover;
+}
+
+.project1{
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    border : 1px solid #3a3a3a;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.card{
+    padding : 20px;
+}
+
+.card h3{
+    color : #e0e0e0;
+    margin-bottom : 10px;
+
+}
+
+.card p{
+    font-style: italic;
+    font-weight: bold;
+    color : #a0a0a0;
+    line-height: 1.6;
+    text-align: start;
+    margin-bottom : 20px;
+}
+
+.card span{
+    background-color: rgba(132, 68, 78, 0.1);
+    color: #885164;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 10px;
+
+}
+
+@media screen and (max-width:1200px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .left-bar{
+        position: static;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    #navigation nav {
+        /* Adjust nav for smaller screens */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .left-bar{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+}
